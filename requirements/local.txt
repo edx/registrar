@@ -195,7 +195,7 @@ django==2.2.20
     #   edx-i18n-tools
     #   edx-lint
     #   rest-condition
-djangorestframework==3.11.1
+djangorestframework==3.11.2
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
