@@ -1,6 +1,6 @@
 Registrar service  |Travis|_ |Codecov|_
 ===================================================
-
+test
 .. |Codecov| image:: http://codecov.io/github/openedx/registrar/coverage.svg?branch=master
 .. _Codecov: http://codecov.io/github/openedx/registrar?branch=master
 
