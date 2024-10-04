@@ -5,8 +5,10 @@ on:
     branches:
       - master
       - open-release/**
-      - huniafatima/test-branch
 
+  pull_request:
+    branches:
+      - '**'
 jobs:
   push:
     runs-on: ubuntu-latest
