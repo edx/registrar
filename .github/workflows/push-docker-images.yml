@@ -5,10 +5,7 @@ on:
     branches:
       - master
       - open-release/**
-
-  pull_request:
-    branches:
-      - *
+      - huniafatima/test-branch
 
 jobs:
   push:
