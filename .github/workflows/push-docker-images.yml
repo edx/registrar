@@ -6,6 +6,10 @@ on:
       - master
       - open-release/**
 
+  pull_request:
+    branches:
+      - *
+
 jobs:
   push:
     runs-on: ubuntu-latest

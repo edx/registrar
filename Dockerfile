@@ -30,7 +30,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy \
 	python${PYTHON_VERSION}-distutils
 
 # need to use virtualenv pypi package with Python 3.12
-RUN pip install --upgrade pip setuptools
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python${PYTHON_VERSION}
 RUN pip install virtualenv
 
