@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-amqp==5.3.0
+amqp==5.3.1
     # via kombu
 analytics-python==1.4.post1
     # via -r requirements/base.in
@@ -97,7 +97,7 @@ django-storages==1.10.1
     #   -r requirements/base.in
 django-user-tasks==3.2.0
     # via -r requirements/base.in
-django-waffle==4.1.0
+django-waffle==4.2.0
     # via
     #   -r requirements/base.in
     #   edx-django-utils
@@ -160,7 +160,7 @@ psutil==6.1.0
     # via edx-django-utils
 pycparser==2.22
     # via cffi
-pyjwt[crypto]==2.9.0
+pyjwt[crypto]==2.10.0
     # via
     #   drf-jwt
     #   edx-auth-backends
@@ -216,7 +216,7 @@ social-auth-core==4.5.4
     # via
     #   edx-auth-backends
     #   social-auth-app-django
-sqlparse==0.5.1
+sqlparse==0.5.2
     # via django
 stevedore==5.3.0
     # via
