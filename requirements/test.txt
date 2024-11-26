@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-amqp==5.3.0
+amqp==5.3.1
     # via
     #   -r requirements/base.txt
     #   kombu
@@ -27,11 +27,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.58
+boto3==1.35.69
     # via
     #   -c requirements/constraints.txt
     #   moto
-botocore==1.35.58
+botocore==1.35.69
     # via
     #   boto3
     #   moto
@@ -83,14 +83,14 @@ click-repl==0.3.0
     # via
     #   -r requirements/base.txt
     #   celery
-code-annotations==1.8.0
+code-annotations==2.0.0
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
     #   edx-lint
 colorama==0.4.6
     # via tox
-coverage[toml]==7.6.4
+coverage[toml]==7.6.8
     # via
     #   -r requirements/test.in
     #   pytest-cov
@@ -161,7 +161,7 @@ django-storages==1.10.1
     #   -r requirements/base.txt
 django-user-tasks==3.2.0
     # via -r requirements/base.txt
-django-waffle==4.1.0
+django-waffle==4.2.0
     # via
     #   -r requirements/base.txt
     #   edx-django-utils
@@ -193,7 +193,7 @@ edx-auth-backends==4.4.0
     # via -r requirements/base.txt
 edx-django-release-util==1.4.0
     # via -r requirements/base.txt
-edx-django-utils==7.0.0
+edx-django-utils==7.0.1
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
@@ -210,7 +210,7 @@ edx-rest-api-client==6.0.0
     # via -r requirements/base.txt
 factory-boy==3.3.1
     # via -r requirements/test.in
-faker==30.8.2
+faker==33.0.0
     # via
     #   -r requirements/test.in
     #   factory-boy
@@ -256,7 +256,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-moto==5.0.20
+moto==5.0.21
     # via -r requirements/test.in
 newrelic==5.24.0.153
     # via
@@ -304,7 +304,7 @@ pycparser==2.22
     # via
     #   -r requirements/base.txt
     #   cffi
-pyjwt[crypto]==2.9.0
+pyjwt[crypto]==2.10.0
     # via
     #   -r requirements/base.txt
     #   drf-jwt
@@ -395,7 +395,7 @@ responses==0.17.0
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
     #   moto
-s3transfer==0.10.3
+s3transfer==0.10.4
     # via boto3
 semantic-version==2.10.0
     # via
@@ -419,11 +419,11 @@ social-auth-core==4.5.4
     #   -r requirements/base.txt
     #   edx-auth-backends
     #   social-auth-app-django
-sqlparse==0.5.1
+sqlparse==0.5.2
     # via
     #   -r requirements/base.txt
     #   django
-stevedore==5.3.0
+stevedore==5.4.0
     # via
     #   -r requirements/base.txt
     #   code-annotations
@@ -464,7 +464,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-virtualenv==20.27.1
+virtualenv==20.28.0
     # via tox
 wcwidth==0.2.13
     # via
