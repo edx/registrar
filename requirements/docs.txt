@@ -122,7 +122,7 @@ django-model-utils==5.0.0
     #   django-user-tasks
 django-mysql==4.15.0
     # via -r requirements/base.txt
-django-simple-history==3.7.0
+django-simple-history==3.8.0
     # via -r requirements/base.txt
 django-storages==1.10.1
     # via
@@ -353,7 +353,7 @@ typing-extensions==4.12.2
     #   -r requirements/base.txt
     #   edx-opaque-keys
     #   pydata-sphinx-theme
-tzdata==2024.2
+tzdata==2025.1
     # via
     #   -r requirements/base.txt
     #   celery
