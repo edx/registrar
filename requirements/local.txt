@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.36.17
+boto3==1.36.22
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.36.17
+botocore==1.36.22
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -138,7 +138,7 @@ coverage[toml]==7.6.12
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-cryptography==44.0.0
+cryptography==44.0.1
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -147,7 +147,7 @@ cryptography==44.0.0
     #   social-auth-core
 ddt==1.7.2
     # via -r requirements/test.txt
-defusedxml==0.8.0rc2
+defusedxml==0.7.1
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -227,7 +227,7 @@ django-storages==1.10.1
     #   -c requirements/constraints.txt
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
-django-user-tasks==3.2.0
+django-user-tasks==3.3.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -298,13 +298,13 @@ edx-opaque-keys==2.11.0
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   edx-drf-extensions
-edx-rest-api-client==6.0.0
+edx-rest-api-client==6.1.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
 factory-boy==3.3.3
     # via -r requirements/test.txt
-faker==36.1.0
+faker==36.1.1
     # via
     #   -r requirements/test.txt
     #   factory-boy
@@ -431,7 +431,7 @@ prompt-toolkit==3.0.50
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   click-repl
-psutil==6.1.1
+psutil==7.0.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -604,12 +604,12 @@ snowballstemmer==2.2.0
     # via
     #   -r requirements/docs.txt
     #   sphinx
-social-auth-app-django==5.4.2
+social-auth-app-django==5.4.3
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   edx-auth-backends
-social-auth-core==4.5.4
+social-auth-core==4.5.6
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
