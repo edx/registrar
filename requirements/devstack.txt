@@ -45,12 +45,12 @@ billiard==4.2.1
     # via
     #   -r requirements/local.txt
     #   celery
-boto3==1.37.24
+boto3==1.37.34
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   moto
-botocore==1.37.24
+botocore==1.37.34
     # via
     #   -r requirements/local.txt
     #   boto3
@@ -60,7 +60,7 @@ cachetools==5.5.2
     # via
     #   -r requirements/local.txt
     #   tox
-celery==5.5.0
+celery==5.5.1
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
@@ -109,7 +109,7 @@ click-repl==0.3.0
     # via
     #   -r requirements/local.txt
     #   celery
-code-annotations==2.2.0
+code-annotations==2.3.0
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
@@ -200,7 +200,7 @@ django-storages==1.10.1
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
-django-user-tasks==3.3.0
+django-user-tasks==3.4.0
     # via -r requirements/local.txt
 django-waffle==4.2.0
     # via
@@ -235,16 +235,16 @@ drf-yasg==1.21.10
     #   edx-api-doc-tools
 edx-api-doc-tools==2.0.0
     # via -r requirements/local.txt
-edx-auth-backends==4.4.0
+edx-auth-backends==4.5.0
     # via -r requirements/local.txt
 edx-django-release-util==1.4.0
     # via -r requirements/local.txt
-edx-django-utils==7.2.0
+edx-django-utils==7.4.0
     # via
     #   -r requirements/local.txt
     #   edx-drf-extensions
     #   edx-rest-api-client
-edx-drf-extensions==10.5.0
+edx-drf-extensions==10.6.0
     # via -r requirements/local.txt
 edx-i18n-tools==1.7.0
     # via -r requirements/local.txt
@@ -254,7 +254,7 @@ edx-opaque-keys==2.12.0
     # via
     #   -r requirements/local.txt
     #   edx-drf-extensions
-edx-rest-api-client==6.1.0
+edx-rest-api-client==6.2.0
     # via -r requirements/local.txt
 factory-boy==3.3.3
     # via -r requirements/local.txt
@@ -304,16 +304,16 @@ kombu==5.5.2
     # via
     #   -r requirements/local.txt
     #   celery
-lxml[html-clean]==5.3.1
+lxml[html-clean]==5.3.2
     # via
     #   -r requirements/local.txt
     #   edx-i18n-tools
     #   lxml-html-clean
-lxml-html-clean==0.4.1
+lxml-html-clean==0.4.2
     # via
     #   -r requirements/local.txt
     #   lxml
-lz4==4.4.3
+lz4==4.4.4
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-cmd
@@ -330,7 +330,7 @@ monotonic==1.6
     # via
     #   -r requirements/local.txt
     #   analytics-python
-moto==5.1.2
+moto==5.1.3
     # via -r requirements/local.txt
 mysqlclient==2.2.7
     # via -r requirements/nonlocal.txt
@@ -381,7 +381,7 @@ polib==1.2.0
     # via
     #   -r requirements/local.txt
     #   edx-i18n-tools
-prompt-toolkit==3.0.50
+prompt-toolkit==3.0.51
     # via
     #   -r requirements/local.txt
     #   click-repl
@@ -435,7 +435,7 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 pymemcache==4.0.0
     # via -r requirements/nonlocal.txt
-pymongo==4.11.3
+pymongo==4.12.0
     # via
     #   -r requirements/local.txt
     #   edx-opaque-keys
@@ -452,9 +452,9 @@ pytest==8.3.5
     #   -r requirements/local.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.1.0
+pytest-cov==6.1.1
     # via -r requirements/local.txt
-pytest-django==4.10.0
+pytest-django==4.11.1
     # via -r requirements/local.txt
 python-dateutil==2.9.0.post0
     # via
@@ -622,7 +622,7 @@ tomlkit==0.13.2
     #   pylint
 tox==4.25.0
     # via -r requirements/local.txt
-typing-extensions==4.13.0
+typing-extensions==4.13.2
     # via
     #   -r requirements/local.txt
     #   beautifulsoup4
