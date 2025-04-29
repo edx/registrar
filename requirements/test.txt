@@ -27,23 +27,23 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.37.24
+boto3==1.38.4
     # via
     #   -c requirements/constraints.txt
     #   moto
-botocore==1.37.24
+botocore==1.38.4
     # via
     #   boto3
     #   moto
     #   s3transfer
 cachetools==5.5.2
     # via tox
-celery==5.5.0
+celery==5.5.2
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   django-user-tasks
-certifi==2025.1.31
+certifi==2025.4.26
     # via
     #   -r requirements/base.txt
     #   requests
@@ -83,7 +83,7 @@ click-repl==0.3.0
     # via
     #   -r requirements/base.txt
     #   celery
-code-annotations==2.2.0
+code-annotations==2.3.0
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
@@ -107,7 +107,7 @@ defusedxml==0.7.1
     #   -r requirements/base.txt
     #   python3-openid
     #   social-auth-core
-dill==0.3.9
+dill==0.4.0
     # via pylint
 distlib==0.3.9
     # via virtualenv
@@ -159,7 +159,7 @@ django-storages==1.10.1
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
-django-user-tasks==3.3.0
+django-user-tasks==3.4.0
     # via -r requirements/base.txt
 django-waffle==4.2.0
     # via
@@ -189,24 +189,24 @@ drf-yasg==1.21.10
     #   edx-api-doc-tools
 edx-api-doc-tools==2.0.0
     # via -r requirements/base.txt
-edx-auth-backends==4.4.0
+edx-auth-backends==4.5.0
     # via -r requirements/base.txt
-edx-django-release-util==1.4.0
+edx-django-release-util==1.5.0
     # via -r requirements/base.txt
-edx-django-utils==7.2.0
+edx-django-utils==7.4.0
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
     #   edx-rest-api-client
-edx-drf-extensions==10.5.0
+edx-drf-extensions==10.6.0
     # via -r requirements/base.txt
 edx-lint==5.6.0
     # via -r requirements/test.in
-edx-opaque-keys==2.12.0
+edx-opaque-keys==3.0.0
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
-edx-rest-api-client==6.1.0
+edx-rest-api-client==6.2.0
     # via -r requirements/base.txt
 factory-boy==3.3.3
     # via -r requirements/test.in
@@ -242,7 +242,7 @@ jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-kombu==5.5.2
+kombu==5.5.3
     # via
     #   -r requirements/base.txt
     #   celery
@@ -256,7 +256,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-moto==5.1.2
+moto==5.1.4
     # via -r requirements/test.in
 newrelic==5.24.0.153
     # via
@@ -268,7 +268,7 @@ oauthlib==3.2.2
     #   -r requirements/base.txt
     #   requests-oauthlib
     #   social-auth-core
-packaging==24.2
+packaging==25.0
     # via
     #   -r requirements/base.txt
     #   drf-yasg
@@ -290,7 +290,7 @@ pluggy==1.5.0
     # via
     #   pytest
     #   tox
-prompt-toolkit==3.0.50
+prompt-toolkit==3.0.51
     # via
     #   -r requirements/base.txt
     #   click-repl
@@ -326,7 +326,7 @@ pylint-plugin-utils==0.8.2
     # via
     #   pylint-celery
     #   pylint-django
-pymongo==4.11.3
+pymongo==4.12.0
     # via
     #   -r requirements/base.txt
     #   edx-opaque-keys
@@ -341,9 +341,9 @@ pytest==8.3.5
     #   -r requirements/test.in
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.1.0
+pytest-cov==6.1.1
     # via -r requirements/test.in
-pytest-django==4.10.0
+pytest-django==4.11.1
     # via -r requirements/test.in
 python-dateutil==2.9.0.post0
     # via
@@ -394,7 +394,7 @@ responses==0.17.0
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
     #   moto
-s3transfer==0.11.4
+s3transfer==0.12.0
     # via boto3
 semantic-version==2.10.0
     # via
@@ -413,7 +413,7 @@ social-auth-app-django==5.4.3
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
-social-auth-core==4.5.6
+social-auth-core==4.6.1
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
@@ -436,7 +436,7 @@ tomlkit==0.13.2
     # via pylint
 tox==4.25.0
     # via -r requirements/test.in
-typing-extensions==4.13.0
+typing-extensions==4.13.2
     # via
     #   -r requirements/base.txt
     #   edx-opaque-keys
