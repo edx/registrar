@@ -160,7 +160,7 @@ class S3Filestore(FilestoreBase):
     File storage using S3Boto3Storage.
     """
     def __init__(self, bucket, path_prefix):
-        storage_backend = import_string(settings.DEFAULT_FILE_STORAGE)(bucket_name=bucket)
+        storage_backend = import_string(settings.STORAGES["default"]["BACKEND"])(bucket_name=bucket)
         super().__init__(storage_backend, bucket, path_prefix)
 
 
@@ -190,7 +190,7 @@ def get_filestore(bucket, path_prefix):
     Return an instance of a FilestoreBase subclass, based on the
     configured default storage backend.
     """
-    class_name = import_string(settings.DEFAULT_FILE_STORAGE).__name__
+    class_name = import_string(settings.STORAGES["default"]["BACKEND"]).__name__
     if class_name == 'FileSystemStorage':  # pragma: no cover
         return FileSystemFilestore(bucket, path_prefix)
     elif class_name == 'S3Boto3Storage':
