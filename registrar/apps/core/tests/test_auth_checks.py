@@ -220,7 +220,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'group_names': set(),
             'required_api_permission': API_READ_METADATA,
             'expected_program_keys': set(),
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 2:
@@ -230,7 +230,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_METADATA,
             'expected_program_keys': set(),
             'filter_organization_key': 'org1',
-            'expected_query_count': 5,
+            'expected_query_count': 4,
         },
         {
             # 3:
@@ -240,7 +240,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_REPORTS,
             'expected_program_keys': set(),
             'filter_organization_key': 'org2',
-            'expected_query_count': 5,
+            'expected_query_count': 4,
         },
         {
             # 4:
@@ -249,7 +249,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'group_names': {'org1_read_metadata'},
             'required_api_permission': API_READ_REPORTS,
             'expected_program_keys': set(),
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 5:
@@ -258,7 +258,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'group_names': {'org1_read_reports'},
             'required_api_permission': API_READ_REPORTS,
             'expected_program_keys': {'masters1a', 'masters1b', 'micromasters1'},
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 6:
@@ -267,7 +267,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'group_names': {'org1_read_reports', 'org1_read_metadata'},
             'required_api_permission': API_READ_REPORTS,
             'expected_program_keys': {'masters1a', 'masters1b', 'micromasters1'},
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 7:
@@ -277,7 +277,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'group_names': {'org1_read_reports', 'org2_read_metadata'},
             'required_api_permission': API_READ_REPORTS,
             'expected_program_keys': {'masters1a', 'masters1b', 'micromasters1'},
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 8:
@@ -288,7 +288,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_METADATA,
             'filter_organization_key': 'org2',
             'expected_program_keys': {'masters2', 'micromasters2'},
-            'expected_query_count': 5,
+            'expected_query_count': 4,
         },
         {
             # 9:
@@ -300,7 +300,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'expected_program_keys': {
                 'masters1a', 'masters1b', 'micromasters1', 'masters2', 'micromasters2',
             },
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 10:
@@ -309,7 +309,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'group_names': {'org1_read_enrollments', 'org2_read_enrollments'},
             'required_api_permission': API_READ_ENROLLMENTS,
             'expected_program_keys': {'masters1a', 'masters1b', 'masters2'},
-            'expected_query_count': 5,
+            'expected_query_count': 3,
         },
         {
             # 11:
@@ -320,7 +320,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_ENROLLMENTS,
             'expected_program_keys': {'masters1a', 'masters1b'},
             'filter_organization_key': 'org1',
-            'expected_query_count': 6,
+            'expected_query_count': 5,
         },
         {
             # 12:
@@ -334,7 +334,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'expected_program_keys': {
                 'masters1a', 'masters1b', 'micromasters1', 'micromasters2'
             },
-            'expected_query_count': 4,
+            'expected_query_count': 2,
         },
         {
             # 13:
@@ -346,7 +346,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             },
             'required_api_permission': API_READ_ENROLLMENTS,
             'expected_program_keys': {'masters1a', 'masters2'},
-            'expected_query_count': 5,
+            'expected_query_count': 3,
         },
         {
             # 14:
@@ -360,7 +360,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_METADATA,
             'expected_program_keys': {'masters1a', 'masters1b', 'micromasters1'},
             'filter_organization_key': 'org1',
-            'expected_query_count': 5,
+            'expected_query_count': 4,
         },
         {
             # 15:
@@ -374,7 +374,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_METADATA,
             'expected_program_keys': {'micromasters2'},
             'filter_organization_key': 'org2',
-            'expected_query_count': 5,
+            'expected_query_count': 4,
         },
         {
             # 16:
@@ -387,7 +387,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             },
             'required_api_permission': API_READ_ENROLLMENTS,
             'expected_program_keys': {'masters1a', 'masters1b', 'masters2'},
-            'expected_query_count': 5,
+            'expected_query_count': 3,
         },
         {
             # 17:
@@ -401,7 +401,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
             'required_api_permission': API_READ_METADATA,
             'expected_program_keys': {'masters2', 'micromasters2'},
             'filter_organization_key': 'org2',
-            'expected_query_count': 5,
+            'expected_query_count': 4,
         },
     )
     @ddt.unpack
