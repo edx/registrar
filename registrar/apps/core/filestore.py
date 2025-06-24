@@ -7,7 +7,8 @@ from botocore.exceptions import ClientError
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.core.files.base import ContentFile
-from django.core.files.storage import default_storage, get_storage_class
+from django.core.files.storage import default_storage
+from django.utils.module_loading import import_string
 
 from registrar.apps.api.utils import to_absolute_api_url
 
@@ -159,7 +160,7 @@ class S3Filestore(FilestoreBase):
     File storage using S3Boto3Storage.
     """
     def __init__(self, bucket, path_prefix):
-        storage_backend = get_storage_class()(bucket_name=bucket)
+        storage_backend = import_string(settings.DEFAULT_FILE_STORAGE)(bucket_name=bucket)
         super().__init__(storage_backend, bucket, path_prefix)
 
 
@@ -189,7 +190,7 @@ def get_filestore(bucket, path_prefix):
     Return an instance of a FilestoreBase subclass, based on the
     configured default storage backend.
     """
-    class_name = get_storage_class().__name__
+    class_name = import_string(settings.DEFAULT_FILE_STORAGE).__name__
     if class_name == 'FileSystemStorage':  # pragma: no cover
         return FileSystemFilestore(bucket, path_prefix)
     elif class_name == 'S3Boto3Storage':
