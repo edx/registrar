@@ -35,7 +35,21 @@ DATABASES = {
     }
 }
 
-STATICFILES_STORAGE = os.environ.get('STATICFILES_STORAGE', 'django.contrib.staticfiles.storage.StaticFilesStorage')
+STORAGES = {
+    'default': {
+        'BACKEND': os.environ.get(
+            'DEFAULT_FILE_STORAGE',
+            'django.core.files.storage.FileSystemStorage'
+        )
+    },
+    'staticfiles': {
+        'BACKEND': os.environ.get(
+            'STATICFILES_STORAGE',
+            'django.contrib.staticfiles.storage.StaticFilesStorage'
+        )
+    }
+}
+
 STATIC_URL = os.environ.get('STATIC_URL', '/static/')
 
 LMS_BASE_URL = 'http://edx.devstack.lms:18000'
