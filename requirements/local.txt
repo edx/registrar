@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.40.26
+boto3==1.40.31
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.40.26
+botocore==1.40.31
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -209,7 +209,7 @@ django-extensions==3.1.5
     #   -c requirements/constraints.txt
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
-django-guardian==3.1.2
+django-guardian==3.2.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -316,7 +316,7 @@ edx-toggles==5.4.1
     #   edx-auth-backends
 factory-boy==3.3.3
     # via -r requirements/test.txt
-faker==37.6.0
+faker==37.8.0
     # via
     #   -r requirements/test.txt
     #   factory-boy
@@ -488,12 +488,12 @@ pylint-plugin-utils==0.9.0
     #   -r requirements/test.txt
     #   pylint-celery
     #   pylint-django
-pymongo==4.14.1
+pymongo==4.15.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   edx-opaque-keys
-pynacl==1.5.0
+pynacl==1.6.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -591,7 +591,7 @@ ruamel-yaml-cmd==0.6.5
     # via -r requirements/local.in
 ruamel-yaml-convert==0.3.2
     # via ruamel-yaml-cmd
-s3transfer==0.13.1
+s3transfer==0.14.0
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -731,7 +731,7 @@ werkzeug==3.1.3
     # via
     #   -r requirements/test.txt
     #   moto
-xmltodict==0.15.1
+xmltodict==1.0.0
     # via
     #   -r requirements/test.txt
     #   moto
