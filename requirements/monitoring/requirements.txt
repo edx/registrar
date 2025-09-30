@@ -55,7 +55,7 @@ backoff==1.10.0
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   analytics-python
-beautifulsoup4==4.13.5
+beautifulsoup4==4.14.2
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -67,14 +67,14 @@ billiard==4.2.2
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   celery
-boto3==1.40.36
+boto3==1.40.41
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   moto
-botocore==1.40.36
+botocore==1.40.41
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -358,7 +358,7 @@ drf-jwt==1.19.2
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   edx-drf-extensions
-drf-yasg==1.21.10
+drf-yasg==1.21.11
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -372,7 +372,7 @@ edx-api-doc-tools==2.1.0
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
-edx-auth-backends==4.6.0
+edx-auth-backends==4.6.1
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -384,7 +384,7 @@ edx-django-release-util==1.5.0
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
-edx-django-utils==8.0.0
+edx-django-utils==8.0.1
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -531,7 +531,7 @@ lz4==4.4.4
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   ruamel-yaml-cmd
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -778,7 +778,7 @@ pywatchman==3.0.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -1056,7 +1056,7 @@ zope-event==6.0
     # via
     #   -r requirements/monitoring/../production.txt
     #   gevent
-zope-interface==8.0
+zope-interface==8.0.1
     # via
     #   -r requirements/monitoring/../production.txt
     #   gevent

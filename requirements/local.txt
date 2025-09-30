@@ -42,7 +42,7 @@ backoff==1.10.0
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   analytics-python
-beautifulsoup4==4.13.5
+beautifulsoup4==4.14.2
     # via
     #   -r requirements/docs.txt
     #   pydata-sphinx-theme
@@ -51,12 +51,12 @@ billiard==4.2.2
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.40.36
+boto3==1.40.41
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.40.36
+botocore==1.40.41
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -266,7 +266,7 @@ drf-jwt==1.19.2
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   edx-drf-extensions
-drf-yasg==1.21.10
+drf-yasg==1.21.11
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -276,7 +276,7 @@ edx-api-doc-tools==2.1.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
-edx-auth-backends==4.6.0
+edx-auth-backends==4.6.1
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -284,7 +284,7 @@ edx-django-release-util==1.5.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
-edx-django-utils==8.0.0
+edx-django-utils==8.0.1
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -374,7 +374,7 @@ lxml-html-clean==0.4.2
     # via lxml
 lz4==4.4.4
     # via ruamel-yaml-cmd
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -539,7 +539,7 @@ pytz==2025.2
     #   drf-yasg
 pywatchman==3.0.0
     # via -r requirements/local.in
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt

@@ -123,17 +123,17 @@ dnspython==2.8.0
     # via pymongo
 drf-jwt==1.19.2
     # via edx-drf-extensions
-drf-yasg==1.21.10
+drf-yasg==1.21.11
     # via
     #   django-user-tasks
     #   edx-api-doc-tools
 edx-api-doc-tools==2.1.0
     # via -r requirements/base.in
-edx-auth-backends==4.6.0
+edx-auth-backends==4.6.1
     # via -r requirements/base.in
 edx-django-release-util==1.5.0
     # via -r requirements/base.in
-edx-django-utils==8.0.0
+edx-django-utils==8.0.1
     # via
     #   edx-auth-backends
     #   edx-drf-extensions
@@ -155,7 +155,7 @@ jinja2==3.1.6
     # via code-annotations
 kombu==5.5.4
     # via celery
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via jinja2
 monotonic==1.6
     # via analytics-python
@@ -199,7 +199,7 @@ pytz==2025.2
     # via
     #   -r requirements/base.in
     #   drf-yasg
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via
     #   code-annotations
     #   drf-yasg
