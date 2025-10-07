@@ -10,7 +10,7 @@ amqp==5.3.1
     #   kombu
 analytics-python==1.4.post1
     # via -r requirements/base.txt
-asgiref==3.9.2
+asgiref==3.10.0
     # via
     #   -r requirements/base.txt
     #   django
@@ -23,11 +23,11 @@ billiard==4.2.2
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.40.36
+boto3==1.40.46
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/production.in
-botocore==1.40.36
+botocore==1.40.46
     # via
     #   boto3
     #   s3transfer
@@ -36,7 +36,7 @@ celery==5.5.3
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   django-user-tasks
-certifi==2025.8.3
+certifi==2025.10.5
     # via
     #   -r requirements/base.txt
     #   requests
@@ -75,17 +75,16 @@ code-annotations==2.3.0
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   edx-toggles
-cryptography==46.0.1
+cryptography==46.0.2
     # via
     #   -r requirements/base.txt
     #   pyjwt
-    #   social-auth-core
 defusedxml==0.7.1
     # via
     #   -r requirements/base.txt
     #   python3-openid
     #   social-auth-core
-django==4.2.24
+django==4.2.25
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
@@ -158,18 +157,18 @@ drf-jwt==1.19.2
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
-drf-yasg==1.21.10
+drf-yasg==1.21.11
     # via
     #   -r requirements/base.txt
     #   django-user-tasks
     #   edx-api-doc-tools
 edx-api-doc-tools==2.1.0
     # via -r requirements/base.txt
-edx-auth-backends==4.6.0
+edx-auth-backends==4.6.1
     # via -r requirements/base.txt
 edx-django-release-util==1.5.0
     # via -r requirements/base.txt
-edx-django-utils==8.0.0
+edx-django-utils==8.0.1
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
@@ -214,7 +213,7 @@ kombu==5.5.4
     # via
     #   -r requirements/base.txt
     #   celery
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via
     #   -r requirements/base.txt
     #   jinja2
@@ -259,7 +258,7 @@ pyjwt[crypto]==2.10.1
     #   social-auth-core
 pymemcache==4.0.0
     # via -r requirements/nonlocal.txt
-pymongo==4.15.1
+pymongo==4.15.2
     # via
     #   -r requirements/base.txt
     #   edx-opaque-keys
@@ -288,7 +287,7 @@ pytz==2025.2
     # via
     #   -r requirements/base.txt
     #   drf-yasg
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via
     #   -r requirements/base.txt
     #   -r requirements/production.in
@@ -326,7 +325,7 @@ social-auth-app-django==5.4.3
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
-social-auth-core==4.7.0
+social-auth-core==4.8.0
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
@@ -376,7 +375,7 @@ wcwidth==0.2.14
     #   prompt-toolkit
 zope-event==6.0
     # via gevent
-zope-interface==8.0
+zope-interface==8.0.1
     # via gevent
 
 # The following packages are considered to be unsafe in a requirements file:

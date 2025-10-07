@@ -14,7 +14,7 @@ amqp==5.3.1
     #   kombu
 analytics-python==1.4.post1
     # via -r requirements/base.txt
-asgiref==3.9.2
+asgiref==3.10.0
     # via
     #   -r requirements/base.txt
     #   django
@@ -27,7 +27,7 @@ backoff==1.10.0
     # via
     #   -r requirements/base.txt
     #   analytics-python
-beautifulsoup4==4.13.5
+beautifulsoup4==4.14.2
     # via pydata-sphinx-theme
 billiard==4.2.2
     # via
@@ -38,7 +38,7 @@ celery==5.5.3
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   django-user-tasks
-certifi==2025.8.3
+certifi==2025.10.5
     # via
     #   -r requirements/base.txt
     #   requests
@@ -77,17 +77,16 @@ code-annotations==2.3.0
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   edx-toggles
-cryptography==46.0.1
+cryptography==46.0.2
     # via
     #   -r requirements/base.txt
     #   pyjwt
-    #   social-auth-core
 defusedxml==0.7.1
     # via
     #   -r requirements/base.txt
     #   python3-openid
     #   social-auth-core
-django==4.2.24
+django==4.2.25
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
@@ -164,18 +163,18 @@ drf-jwt==1.19.2
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
-drf-yasg==1.21.10
+drf-yasg==1.21.11
     # via
     #   -r requirements/base.txt
     #   django-user-tasks
     #   edx-api-doc-tools
 edx-api-doc-tools==2.1.0
     # via -r requirements/base.txt
-edx-auth-backends==4.6.0
+edx-auth-backends==4.6.1
     # via -r requirements/base.txt
 edx-django-release-util==1.5.0
     # via -r requirements/base.txt
-edx-django-utils==8.0.0
+edx-django-utils==8.0.1
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
@@ -213,7 +212,7 @@ kombu==5.5.4
     # via
     #   -r requirements/base.txt
     #   celery
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via
     #   -r requirements/base.txt
     #   jinja2
@@ -260,7 +259,7 @@ pyjwt[crypto]==2.10.1
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   social-auth-core
-pymongo==4.15.1
+pymongo==4.15.2
     # via
     #   -r requirements/base.txt
     #   edx-opaque-keys
@@ -286,7 +285,7 @@ pytz==2025.2
     # via
     #   -r requirements/base.txt
     #   drf-yasg
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via
     #   -r requirements/base.txt
     #   code-annotations
@@ -326,7 +325,7 @@ social-auth-app-django==5.4.3
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
-social-auth-core==4.7.0
+social-auth-core==4.8.0
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
