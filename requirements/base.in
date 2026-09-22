@@ -19,6 +19,7 @@ edx-auth-backends
 edx-django-release-util
 edx-drf-extensions
 edx-rest-api-client
+openedx-atlas             # pulls translations from edx/openedx-translations at build time (make pull_translations)
 python-slugify
 pytz
 redis

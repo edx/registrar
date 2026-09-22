@@ -5,9 +5,9 @@ TOX=''
         prod-requirements devstack-requirements local-requirements run-local \
         dbshell-local shell coverage test quality pii_check validate migrate \
         createsuperuser html_coverage extract_translations dummy_translations \
-        fake_translations pull_translations push_translations \
+        fake_translations pull_translations \
         detect_changed_source_translations validate_translations api_generated \
-        validate_api_committed install_transifex_client
+        validate_api_committed
 
 define BROWSER_PYSCRIPT
 import os, webbrowser, sys
@@ -154,17 +154,12 @@ compile_translations:
 
 fake_translations: extract_translations dummy_translations compile_translations ## generate and compile dummy translation files
 
-pull_translations: ## pull translations from Transifex
-	tx pull -t -a -f --mode reviewed
-
-push_translations: ## push source translation files (.po) from Transifex
-	tx push -s
+pull_translations: ## pull translations from edx/openedx-translations via atlas (OEP-58)
+	find registrar/conf/locale -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
+	atlas pull $(ATLAS_OPTIONS) translations/registrar/registrar/conf/locale:registrar/conf/locale
+	$(TOX)python manage.py compilemessages
 
 detect_changed_source_translations: ## check if translation files are up-to-date
 	cd registrar && i18n_tool changed
 
 validate_translations: fake_translations detect_changed_source_translations ## install fake translations and check if translation files are up-to-date
-
-install_transifex_client: ## Install the Transifex client
-	curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
-	git checkout -- LICENSE README.md

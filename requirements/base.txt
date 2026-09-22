@@ -163,6 +163,8 @@ oauthlib==3.3.1
     # via
     #   requests-oauthlib
     #   social-auth-core
+openedx-atlas==0.7.1
+    # via -r requirements/base.in
 packaging==25.0
     # via
     #   drf-yasg
