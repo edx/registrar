@@ -28,7 +28,7 @@ jobs:
       run: export DISPLAY=:99.0
     - name: Install dependencies
       run: |
-        pip install -U pip wheel
+        pip install -r requirements/pip.txt
         make requirements
     - name: Run Tests
       env:
