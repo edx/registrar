@@ -64,7 +64,6 @@ upgrade: piptools  $(COMMON_CONSTRAINTS_TXT)  ## re-compile requirements .txt fi
 	pip install -qr requirements/pip.txt
 	pip install -qr requirements/pip-tools.txt
 	pip-compile --upgrade -o requirements/github.txt requirements/github.in
-	pip-compile --upgrade -o requirements/optional.txt requirements/optional.in
 	pip-compile --upgrade -o requirements/base.txt requirements/base.in
 	pip-compile --upgrade -o requirements/docs.txt requirements/docs.in
 	pip-compile --upgrade -o requirements/test.txt requirements/test.in
